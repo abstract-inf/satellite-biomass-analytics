@@ -8,9 +8,8 @@
 
 This repository contains a comprehensive data analytics project for the analysis of pasture biomass production in the Brazilian Cerrado using satellite remote sensing and laboratory chemical data. The project employs **descriptive, predictive, and prescriptive analytics** to provide actionable insights for agricultural management and environmental sustainability.
 
-The descriptive figures in this report are exported from `descriptive_analytics.ipynb` into the `images/` folder so they render directly in GitHub.
 
-**Student:** Yazan AlAtout - 23110209  
+**Created by:** Yazan AlAtout  
 **Course:** Data Analytics  
 **Topics:** Agriculture · Analytics · Data Visualization · Machine Learning · Neural Networks · Satellite Data · Vegetation Analysis
 
@@ -174,9 +173,6 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
 - **Methodology:** 5-Fold Cross-Validation with multiple random states
 - **Conclusion:** Moderate predictive power; Lasso outperformed SelectFromModel
 
-#### Placeholder for Lasso Feature Importance Plot
-![Lasso Feature Selection Results](./images/lasso-feature-importance.png)
-
 ---
 
 ### Time Series Forecasting with Exponential Smoothing
@@ -185,9 +181,6 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
 - **Alpha = 0.9:** Overfits to recent data; not suitable for future forecasting
 - **Alpha = 0.4-0.6:** Optimal range capturing patterns without overfitting
 - **Key Insight:** Lower alpha values preserve long-term trends better
-
-#### Placeholder for Exponential Smoothing Alpha Comparison
-![Exponential Smoothing - Alpha Values Comparison](./images/exponential-smoothing-alpha.png)
 
 ---
 
@@ -207,8 +200,6 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
 - Multiple random state training ensures model consistency
 - Larger epoch count allows better convergence
 
-#### Placeholder for LSTM Training Loss & MAE
-![LSTM Training Loss and MAE over Epochs](./images/lstm-training-metrics.png)
 
 #### LSTM with SelectKBest Feature Selection
 
@@ -268,9 +259,6 @@ Individual [0.0330, 0.3654, 0.0719] → Fitness: 48.24
 #### 6. Sorting
 Individuals are ranked by fitness; top performers advance to the next generation.
 
-#### Placeholder for Genetic Algorithm Fitness Evolution
-![GA Fitness Evolution Over Generations](./images/ga-fitness-evolution.png)
-
 ---
 
 ### Final Optimized Weights
@@ -284,9 +272,6 @@ Individuals are ranked by fitness; top performers advance to the next generation
 | **w₃ (Vegetation Index - EVI)** | 0.07190834 | ~7% importance |
 
 **Key Insight:** Rainfall is the most critical factor (2× more important than temperature, 4× more important than vegetation index) for environmental stability in the Brazilian Cerrado.
-
-#### Placeholder for Weight Distribution Visualization
-![Environmental Stability Weights Distribution](./images/weight-distribution.png)
 
 ---
 
@@ -418,7 +403,7 @@ jupyter notebook
 
 ## Author
 
-**Yazan AlAtout** - Data Analytics Student (23110209)
+**Yazan AlAtout** - yazanatout1@gmail.com
 
 ---
 
@@ -433,8 +418,5 @@ This project is provided as-is for educational purposes.
 - Brazilian Cerrado pasture data providers
 - Satellite remote sensing data (Sentinel-2)
 - Laboratory chemical analysis data sources
-- Course instructors and advisors in Data Analytics
+- Course instructors and advisors in Data Analytics: Eng. Bassam Kasasbeh
 
----
-
-**Last Updated:** May 19, 2026
