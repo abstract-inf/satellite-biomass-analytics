@@ -1,8 +1,14 @@
 # Satellite Biomass Analytics
 
+<p align="center">
+   <img src="./cover-image.png" alt="Satellite Biomass Analytics cover image" width="100%">
+</p>
+
 ## Project Overview
 
 This repository contains a comprehensive data analytics project for the analysis of pasture biomass production in the Brazilian Cerrado using satellite remote sensing and laboratory chemical data. The project employs **descriptive, predictive, and prescriptive analytics** to provide actionable insights for agricultural management and environmental sustainability.
+
+The descriptive figures in this report are exported from `descriptive_analytics.ipynb` into the `images/` folder so they render directly in GitHub.
 
 **Student:** Yazan AlAtout - 23110209  
 **Course:** Data Analytics  
@@ -31,7 +37,7 @@ The analysis identified critical rainfall events throughout the year:
 - **Highest rainfall recorded:** 2022-06-22 (unexpected peak outside typical seasonal patterns)
 - **Insight:** Strong seasonal patterns can be leveraged for targeted agricultural planning
 
-#### Placeholder for Rainfall Visualization
+#### Rainfall Visualization
 ![Rainfall Analysis Chart](./images/rainfall-analysis.png)
 
 ---
@@ -46,7 +52,7 @@ A comprehensive analysis of the relationship between Enhanced Vegetation Index (
 - Optimal biomass development occurs under moderate rainfall conditions
 - This insight directly impacts planting schedules and resource allocation
 
-#### Placeholder for EVI-Biomass-Rainfall Bubble Chart
+#### EVI, Biomass, and Rainfall Bubble Chart
 ![EVI vs Biomass vs Rainfall Bubble Plot](./images/evi-biomass-rainfall-bubble.png)
 
 ---
@@ -60,10 +66,10 @@ Low Acid Detergent Fiber (ADF) and Neutral Detergent Fiber (NDF) are critical in
 
 **Geographic locations identified with optimal low ADF/NDF ratios** have been mapped for targeted grazing management.
 
-#### Placeholder for NDF vs ADF Scatter Plot
+#### NDF vs ADF Scatter Plot
 ![NDF vs ADF Scatter Plot](./images/ndf-adf-scatter.png)
 
-#### Placeholder for Optimal Forage Areas Map
+#### Optimal Forage Areas Map
 ![Geographic Map - Optimal Forage Areas](./images/optimal-forage-locations.png)
 
 ---
@@ -77,7 +83,7 @@ This moderate balance of nutrients and moisture indicates:
 - Adequate nutritional value for grazing livestock
 - Good overall pasture condition and management
 
-#### Placeholder for DMC Frequency Distribution
+#### DMC Frequency Distribution
 ![Dry Matter Content Distribution](./images/dmc-frequency-distribution.png)
 
 ---
@@ -91,7 +97,7 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
 - **B8 and B8A bands** show broader peaks, suggesting higher variability (vegetation/surface water indicators)
 - **Most frequent B8 location:** (-20.446630, -54.839741) - appeared 4 times, indicating high reflectance in the 3500-4500 Hz range
 
-#### Placeholder for Spectral Band Density Analysis
+#### Spectral Band Density Analysis
 ![Spectral Bands Density Distribution](./images/spectral-bands-density.png)
 
 ---
@@ -109,10 +115,10 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
    - Higher solar radiation increases water loss through evaporation and plant transpiration
    - Critical for water resource management and agricultural planning
 
-#### Placeholder for Dew Point & Longwave Radiation Analysis
+#### Dew Point & Longwave Radiation Analysis
 ![Dew Point vs Longwave Radiation](./images/dew-point-longwave-radiation.png)
 
-#### Placeholder for Solar Radiation & Evapotranspiration Analysis
+#### Solar Radiation & Evapotranspiration Analysis
 ![Solar Radiation vs Evapotranspiration](./images/solar-radiation-evapotranspiration.png)
 
 ---
@@ -123,7 +129,7 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
 - Higher rainfall = more stable environment for animal survival
 - Essential for sustainable grazing management
 
-#### Placeholder for Environmental Stability Index Chart
+#### Rainfall vs Environmental Stability Index
 ![Rainfall vs Environmental Stability Index](./images/rainfall-environmental-stability.png)
 
 ---
@@ -137,7 +143,7 @@ Analysis of satellite spectral bands (B1, B8, B8A, etc.) reveals:
 - **Grazed areas (With animals):** Lower biomass due to vegetation consumption
 - **Biomass difference:** Approximately 25-40% higher in animal-free zones
 
-#### Placeholder for Biomass Distribution with Animal Overlay
+#### Biomass Distribution with Animal Overlay
 ![Biomass and Animal Distribution with Satellite Image Overlay](./images/biomass-animal-distribution.png)
 
 **Legend:**
@@ -322,9 +328,10 @@ The optimized weights enable:
 ## Repository Structure
 
 ```
-satellite-biomass-analytics/
+satellite-biomass-analytics-main/
 ├── README.md                          # This file
-├── images/                            # Visualization placeholders
+├── cover-image.png                    # Header image used in the README
+├── images/                            # Exported notebook figures
 │   ├── rainfall-analysis.png
 │   ├── evi-biomass-rainfall-bubble.png
 │   ├── ndf-adf-scatter.png
@@ -334,27 +341,12 @@ satellite-biomass-analytics/
 │   ├── dew-point-longwave-radiation.png
 │   ├── solar-radiation-evapotranspiration.png
 │   ├── rainfall-environmental-stability.png
-│   ├── biomass-animal-distribution.png
-│   ├── exponential-smoothing-alpha.png
-│   ├── lstm-training-metrics.png
-│   ├── ga-fitness-evolution.png
-│   ├── weight-distribution.png
-│   └── lasso-feature-importance.png
-├── notebooks/                        # Jupyter notebooks (99.6% of repo)
-│   ├── 01_descriptive_analytics.ipynb
-│   ├── 02_predictive_analytics.ipynb
-│   ├── 03_prescriptive_analytics.ipynb
-│   └── data_exploration.ipynb
-├── data/                             # Raw and processed data
-│   ├── raw/
-│   │   ├── satellite_data/
-│   │   └── chemical_lab_data/
-│   └── processed/
-├── src/                              # Python scripts (0.4% of repo)
-│   ├── preprocessing.py
-│   ├── models.py
-│   └── utils.py
-└── requirements.txt                  # Project dependencies
+│   └── biomass-animal-distribution.png
+├── descriptive_analytics.ipynb        # Descriptive analysis notebook
+├── predictive_analytics.ipynb         # Predictive analysis notebook
+├── Complete_Dataset_updated.csv        # Source dataset
+├── sat-img.png                        # Satellite image overlay used in the map figure
+└── Perspective Analytics/             # Genetic algorithm notes and outputs
 ```
 
 ---
